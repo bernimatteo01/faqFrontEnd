@@ -1,0 +1,30 @@
+<div class="faq-container">
+  <h2 class="faq-title">FAQ</h2>
+  <h3 class="faq-subtitle">Domande Frequenti</h3>
+
+  <div class="faq-list">
+    <div *ngFor="let faq of faqs" class="faq-item">
+      <div class="faq-question">
+        <div class="faq-left">
+          <span>{{ faq.domanda }}</span>
+        </div>
+  
+        <div class="faq-actions">
+          <ng-container *ngIf="isLoggedIn()">
+            <button class="faq-action-btn edit" (click)="goToEditFaq(faq.id!); $event.stopPropagation()">✏️</button>
+            <button class="faq-action-btn delete" (click)="deleteFaq(faq.id!); $event.stopPropagation()">🗑️</button>
+          </ng-container>
+          <div class="faq-icon" (click)="toggleFaq(faq)" [class.open]="faq.open">
+            ➤
+          </div>
+        </div>
+      </div>
+  
+      <div class="faq-answer" *ngIf="faq.open">
+        {{ faq.risposta }}
+      </div>
+    </div>
+  </div>
+
+  <button *ngIf="isLoggedIn()" class="add-faq-btn" (click)="goToAddFaq()">+ Aggiungi FAQ</button>
+</div>

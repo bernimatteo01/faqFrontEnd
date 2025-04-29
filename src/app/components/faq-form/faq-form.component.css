@@ -1,0 +1,96 @@
+.faq-form-container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  max-width: 600px;
+  margin: 40px auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #555;
+}
+
+input, textarea {
+  width: 95%;
+  max-width: 500px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  margin: 0 auto;
+  display: block;
+}
+
+
+input:focus, textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+  outline: none;
+}
+
+.invalid {
+  border-color: #ef4444;
+}
+
+.error {
+  margin-top: 5px;
+  color: #ef4444;
+  font-size: 14px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button.primary {
+  background-color: #3b82f6;
+  color: white;
+}
+
+button.primary:hover {
+  background-color: #2563eb;
+}
+
+button.secondary {
+  background-color: #e5e7eb;
+  color: #374151;
+}
+
+button.secondary:hover {
+  background-color: #d1d5db;
+}
+
+button:disabled {
+  background-color: #cbd5e1;
+  cursor: not-allowed;
+}

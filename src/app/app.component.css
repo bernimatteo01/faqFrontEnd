@@ -1,0 +1,60 @@
+.top-bar {
+  width: 100%;
+  padding: 15px 30px;
+  background: linear-gradient( 135deg, #f5f7fa, #c3cfe2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-sizing: border-box; /* <<--- IMPORTANTE */
+}
+
+/* Left Section */
+.left-section {
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+}
+
+/* Right Section */
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+/* Button and Link style */
+.right-section a,
+.right-section button {
+  display: inline-flex;  /* <<--- Rende il bottone proporzionato */
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+  text-decoration: none;
+  background-color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 16px;
+  color: #004fd6;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap; /* <<--- Impedisce di andare a capo */
+  min-width: 80px; /* <<--- Così il bottone ha una larghezza minima */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect */
+.right-section a:hover,
+.right-section button:hover {
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  color: #ffffff;
+}
+
+/* Page Content */
+.page-content {
+  padding: 30px;
+}

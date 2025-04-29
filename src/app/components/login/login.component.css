@@ -1,0 +1,81 @@
+/* Background */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /*background: linear-gradient(to right, #6a11cb, #2575fc);*/
+}
+
+/* Card */
+.login-card {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Titolo */
+.login-card h2 {
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+/* Form group */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Label */
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #555555;
+}
+
+/* Input */
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 6px 12px; /* <<--- Ridotto padding */
+  border: 1px solid #cccccc;
+  border-radius: 6px; /* <<--- Più snello */
+  outline: none;
+  font-size: 15px; /* <<--- Leggermente ridotto */
+  height: 38px; /* <<--- Altezza controllata */
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+  border-color: #2575fc;
+}
+
+/* Button */
+button[type="submit"] {
+  width: 100%;
+  padding: 10px; /* <<--- meno spesso */
+  background-color: #2575fc;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #00348d;
+}
+
+/* Error message */
+.error {
+  color: red;
+  margin-top: 30px;
+  font-size: 20px;
+}
