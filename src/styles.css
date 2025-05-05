@@ -1,8 +1,8 @@
-/* styles.css (file globale) */
+/* Stile base per il body */
 body {
-    background-color: #f5f7fa; /* Grigio chiaro moderno */
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', 'Roboto', sans-serif;
-  }
-  
+  background-color: #f5f7fa;  /* Colore di sfondo grigio chiaro, moderno e neutro */
+  margin: 0;                  /* Rimuove margini predefiniti del browser */
+  padding: 0;                 /* Rimuove padding di default */
+  font-family: 'Poppins', 'Roboto', sans-serif; 
+  /* Font moderno e leggibile: Poppins come principale, Roboto come fallback */
+}

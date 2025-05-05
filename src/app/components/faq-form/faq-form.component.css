@@ -1,25 +1,29 @@
+/* Container principale del form */
 .faq-form-container {
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  max-width: 600px;
-  margin: 40px auto;
-  font-family: 'Roboto', sans-serif;
+  background: #ffffff;                     /* Sfondo bianco */
+  padding: 30px;                           /* Spazio interno */
+  border-radius: 12px;                     /* Angoli arrotondati */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Ombra leggera */
+  max-width: 600px;                        /* Larghezza massima */
+  margin: 40px auto;                       /* Centro verticale con margine */
+  font-family: 'Roboto', sans-serif;       /* Font elegante e leggibile */
 }
 
+/* Titolo del form */
 h2 {
   margin-bottom: 20px;
   font-size: 24px;
   text-align: center;
-  color: #333;
+  color: #333;                             /* Grigio scuro per contrasto */
 }
 
+/* Margine tra i gruppi del form */
 .form-group {
   margin-bottom: 20px;
   text-align: center;
 }
 
+/* Stile dell'etichetta sopra input/textarea */
 label {
   display: block;
   margin-bottom: 8px;
@@ -27,11 +31,12 @@ label {
   color: #555;
 }
 
+/* Stile di input e textarea */
 input, textarea {
-  width: 95%;
+  width: 95%;                              /* Quasi tutta la larghezza disponibile */
   max-width: 500px;
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 1px solid #ccc;                  /* Bordo grigio chiaro */
   border-radius: 8px;
   font-size: 16px;
   transition: border-color 0.3s, box-shadow 0.3s;
@@ -39,23 +44,26 @@ input, textarea {
   display: block;
 }
 
-
+/* Stile al focus di input e textarea */
 input:focus, textarea:focus {
-  border-color: #3b82f6;
+  border-color: #3b82f6;                   /* Azzurro (color primario) */
   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
   outline: none;
 }
 
+/* Bordo rosso per campi invalidi */
 .invalid {
-  border-color: #ef4444;
+  border-color: #ef4444;                   /* Rosso chiaro */
 }
 
+/* Messaggio di errore sotto i campi */
 .error {
   margin-top: 5px;
-  color: #ef4444;
+  color: #ef4444;                          /* Rosso */
   font-size: 14px;
 }
 
+/* Container dei bottoni */
 .buttons {
   display: flex;
   justify-content: center;
@@ -63,6 +71,7 @@ input:focus, textarea:focus {
   margin-top: 20px;
 }
 
+/* Stile base dei bottoni */
 button {
   border: none;
   cursor: pointer;
@@ -72,24 +81,29 @@ button {
   transition: background-color 0.3s;
 }
 
+/* Bottone primario: Salva */
 button.primary {
-  background-color: #3b82f6;
+  background-color: #3b82f6;              /* Blu */
   color: white;
 }
 
+/* Hover bottone primario */
 button.primary:hover {
   background-color: #2563eb;
 }
 
+/* Bottone secondario: Annulla */
 button.secondary {
-  background-color: #e5e7eb;
-  color: #374151;
+  background-color: #e5e7eb;              /* Grigio chiaro */
+  color: #374151;                         /* Grigio scuro */
 }
 
+/* Hover bottone secondario */
 button.secondary:hover {
   background-color: #d1d5db;
 }
 
+/* Stato disabled dei bottoni */
 button:disabled {
   background-color: #cbd5e1;
   cursor: not-allowed;

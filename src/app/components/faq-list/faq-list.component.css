@@ -1,12 +1,12 @@
 /* Container Principale */
 .faq-container {
-  max-width: 900px;
-  margin: 60px auto;
+  max-width: 900px;              /* Larghezza massima */
+  margin: 60px auto;             /* Centrato verticalmente con spazio sopra/sotto */
   padding: 20px;
   text-align: center;
 }
 
-/* Titolo e sottotitolo */
+/* Titolo e Sottotitolo */
 .faq-title {
   font-size: 40px;
   font-weight: 700;
@@ -21,21 +21,21 @@
   font-weight: 400;
 }
 
-/* Lista FAQ */
+/* Lista delle FAQ */
 .faq-list {
-  text-align: left;
+  text-align: left; /* Allinea le domande a sinistra */
 }
 
-/* Singolo item FAQ */
+/* Singolo elemento FAQ */
 .faq-item {
-  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Sfondo sfumato */
   border-radius: 12px;
   margin-bottom: 20px;
   overflow: hidden;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-/* Hover su item */
+/* Effetto al passaggio del mouse */
 .faq-item:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
@@ -44,7 +44,7 @@
 /* Domanda */
 .faq-question {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;   /* Spazio tra domanda e azioni */
   align-items: center;
   padding: 22px 28px;
   font-size: 18px;
@@ -53,16 +53,16 @@
   cursor: pointer;
 }
 
-/* Testo domanda */
+/* Parte sinistra della domanda (testo) */
 .faq-left {
   flex-grow: 1;
 }
 
-/* Azioni (modifica, elimina, freccia) */
+/* Azioni: modifica, elimina, icona */
 .faq-actions {
   display: flex;
   align-items: center;
-  gap: 10px; /* spazio tra i bottoni e la freccia */
+  gap: 10px;
 }
 
 /* Bottoni azione */
@@ -99,22 +99,22 @@
 }
 
 .faq-icon.open {
-  transform: rotate(90deg);
+  transform: rotate(90deg);    /* Ruota la freccia quando aperta */
   color: #0072ff;
 }
 
-/* Risposta */
+/* Risposta espansa */
 .faq-answer {
   padding: 24px 28px 22px 28px;
   color: #555;
   font-size: 16px;
   line-height: 1.7;
   background: white;
-  animation: slideDown 0.3s ease;
+  animation: slideDown 0.3s ease;  /* Animazione di apertura */
   border-top: 1px solid #eee;
 }
 
-/* Animazione apertura */
+/* Animazione: discesa morbida */
 @keyframes slideDown {
   from {
     opacity: 0;
@@ -126,10 +126,10 @@
   }
 }
 
-/* Pulsante "Aggiungi FAQ" */
+/* Bottone "Aggiungi FAQ" */
 .add-faq-btn {
   margin-top: 50px;
-  background: linear-gradient( 135deg, #f5f7fa, #c3cfe2);
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
   color: black;
   padding: 14px 30px;
   font-size: 18px;
@@ -146,7 +146,7 @@
   color: #ffffff;
 }
 
-/* Responsive per mobile */
+/* Responsività Mobile */
 @media (max-width: 600px) {
   .faq-title {
     font-size: 32px;

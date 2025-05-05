@@ -1,36 +1,36 @@
-/* Background */
+/* Contenitore principale */
 .login-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  /*background: linear-gradient(to right, #6a11cb, #2575fc);*/
+  justify-content: center;    /* Centra orizzontalmente */
+  align-items: center;        /* Centra verticalmente */
+  height: 100vh;              /* Altezza schermo intero */
+  /* background: linear-gradient(...) opzionale per sfondo colorato */
 }
 
-/* Card */
+/* Card del login (box bianco) */
 .login-card {
   background: #ffffff;
   padding: 40px 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;                  /* Angoli arrotondati */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Ombra leggera */
   width: 100%;
   max-width: 400px;
   text-align: center;
 }
 
-/* Titolo */
+/* Titolo del form */
 .login-card h2 {
   margin-bottom: 20px;
   color: #333333;
 }
 
-/* Form group */
+/* Gruppo di input (label + campo) */
 .form-group {
   margin-bottom: 20px;
   text-align: left;
 }
 
-/* Label */
+/* Etichetta del campo */
 .form-group label {
   display: block;
   margin-bottom: 5px;
@@ -38,28 +38,29 @@
   color: #555555;
 }
 
-/* Input */
+/* Input: username e password */
 input[type="text"], input[type="password"] {
   width: 100%;
-  padding: 6px 12px; /* <<--- Ridotto padding */
+  padding: 6px 12px;                    /* Spaziatura interna */
   border: 1px solid #cccccc;
-  border-radius: 6px; /* <<--- Più snello */
+  border-radius: 6px;
   outline: none;
-  font-size: 15px; /* <<--- Leggermente ridotto */
-  height: 38px; /* <<--- Altezza controllata */
+  font-size: 15px;
+  height: 38px;                         /* Altezza uniforme */
   transition: border-color 0.3s;
   box-sizing: border-box;
 }
 
+/* Stato di focus dell'input */
 input[type="text"]:focus, input[type="password"]:focus {
-  border-color: #2575fc;
+  border-color: #2575fc;                /* Blu focus */
 }
 
-/* Button */
+/* Bottone di login */
 button[type="submit"] {
   width: 100%;
-  padding: 10px; /* <<--- meno spesso */
-  background-color: #2575fc;
+  padding: 10px;
+  background-color: #2575fc;           /* Blu acceso */
   color: #ffffff;
   font-size: 16px;
   border: none;
@@ -70,10 +71,10 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #00348d;
+  background-color: #00348d;           /* Blu scuro al passaggio del mouse */
 }
 
-/* Error message */
+/* Messaggio di errore */
 .error {
   color: red;
   margin-top: 30px;

@@ -1,60 +1,61 @@
+/* Barra superiore fissa (Top Bar) */
 .top-bar {
   width: 100%;
-  padding: 15px 30px;
-  background: linear-gradient( 135deg, #f5f7fa, #c3cfe2);
+  padding: 15px 30px;                            /* Spaziatura interna */
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Sfondo sfumato */
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;               /* Spazio tra logo e pulsanti */
   align-items: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  position: sticky;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);     /* Leggera ombra inferiore */
+  position: sticky;                             /* Rimane in alto quando scrolli */
   top: 0;
-  z-index: 1000;
-  box-sizing: border-box; /* <<--- IMPORTANTE */
+  z-index: 1000;                                 /* Sempre visibile sopra gli altri elementi */
+  box-sizing: border-box;                        /* Padding incluso nel width */
 }
 
-/* Left Section */
+/* Sezione sinistra (es. titolo) */
 .left-section {
   font-size: 20px;
   font-weight: 600;
   color: black;
 }
 
-/* Right Section */
+/* Sezione destra (login/logout/link) */
 .right-section {
   display: flex;
   align-items: center;
 }
 
-/* Button and Link style */
+/* Stile link e bottoni della top-bar */
 .right-section a,
 .right-section button {
-  display: inline-flex;  /* <<--- Rende il bottone proporzionato */
+  display: inline-flex;                /* Mantiene allineamento verticale */
   align-items: center;
   justify-content: center;
-  margin-left: 20px;
+  margin-left: 20px;                   /* Spazio tra i bottoni */
   text-decoration: none;
-  background-color: #ffffff;
+  background-color: #ffffff;           /* Bottone bianco */
   border: none;
   padding: 8px 16px;
-  border-radius: 20px;
+  border-radius: 20px;                 /* Bordi arrotondati */
   font-size: 16px;
-  color: #004fd6;
+  color: #004fd6;                      /* Testo blu */
   font-weight: 500;
   cursor: pointer;
-  transition: all 0.3s ease;
-  white-space: nowrap; /* <<--- Impedisce di andare a capo */
-  min-width: 80px; /* <<--- Così il bottone ha una larghezza minima */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;           /* Transizione morbida su hover */
+  white-space: nowrap;                /* Evita a capo del testo */
+  min-width: 80px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombra leggera */
 }
 
-/* Hover effect */
+/* Effetto hover per link e bottoni */
 .right-section a:hover,
 .right-section button:hover {
   background: linear-gradient(to right, #0072ff, #00c6ff);
-  color: #ffffff;
+  color: #ffffff;                     /* Testo bianco al passaggio */
 }
 
-/* Page Content */
+/* Contenuto principale della pagina */
 .page-content {
-  padding: 30px;
+  padding: 30px;                      /* Margine interno uniforme */
 }
