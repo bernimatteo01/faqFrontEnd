@@ -26,7 +26,7 @@ export class FaqFormComponent implements OnInit {
     private faqService: FaqService,   // Per chiamare API backend
     private router: Router,           // Per navigare
     private route: ActivatedRoute     // Per leggere parametri dalla route
-  ) {}
+  ) { }
 
   /**
    * Metodo eseguito all'inizializzazione del componente.
@@ -39,7 +39,7 @@ export class FaqFormComponent implements OnInit {
       risposta: ['', Validators.required]
     });
 
-    // Controlla se nella route è presente un ID → modalità modifica
+    // Controlla se nella route è presente un ID: modalità modifica
     this.route.paramMap.subscribe(params => {
       const idParam = params.get('id');
       if (idParam) {

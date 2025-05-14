@@ -4,7 +4,8 @@
   <form [formGroup]="faqForm" (ngSubmit)="onSubmit()">
     <div class="form-group">
       <label for="domanda">Domanda</label>
-      <input id="domanda" formControlName="domanda" [class.invalid]="faqForm.get('domanda')?.invalid && faqForm.get('domanda')?.touched">
+      <input id="domanda" formControlName="domanda"
+        [class.invalid]="faqForm.get('domanda')?.invalid && faqForm.get('domanda')?.touched">
       <div class="error" *ngIf="faqForm.get('domanda')?.invalid && faqForm.get('domanda')?.touched">
         La domanda è obbligatoria.
       </div>
@@ -12,7 +13,8 @@
 
     <div class="form-group">
       <label for="risposta">Risposta</label>
-      <textarea id="risposta" formControlName="risposta" rows="5" [class.invalid]="faqForm.get('risposta')?.invalid && faqForm.get('risposta')?.touched"></textarea>
+      <textarea id="risposta" formControlName="risposta" rows="5"
+        [class.invalid]="faqForm.get('risposta')?.invalid && faqForm.get('risposta')?.touched"></textarea>
       <div class="error" *ngIf="faqForm.get('risposta')?.invalid && faqForm.get('risposta')?.touched">
         La risposta è obbligatoria.
       </div>

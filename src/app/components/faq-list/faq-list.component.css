@@ -1,7 +1,9 @@
 /* Container Principale */
 .faq-container {
-  max-width: 900px;              /* Larghezza massima */
-  margin: 60px auto;             /* Centrato verticalmente con spazio sopra/sotto */
+  /* Larghezza massima */
+  max-width: 900px;
+  /* Centrato verticalmente con spazio sopra/sotto */
+  margin: 60px auto;
   padding: 20px;
   text-align: center;
 }
@@ -23,12 +25,13 @@
 
 /* Lista delle FAQ */
 .faq-list {
-  text-align: left; /* Allinea le domande a sinistra */
+  text-align: left;
 }
 
 /* Singolo elemento FAQ */
 .faq-item {
-  background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Sfondo sfumato */
+  /* Sfondo sfumato */
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
   border-radius: 12px;
   margin-bottom: 20px;
   overflow: hidden;
@@ -38,13 +41,14 @@
 /* Effetto al passaggio del mouse */
 .faq-item:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Domanda */
 .faq-question {
   display: flex;
-  justify-content: space-between;   /* Spazio tra domanda e azioni */
+  /* Spazio tra domanda e azioni */
+  justify-content: space-between;
   align-items: center;
   padding: 22px 28px;
   font-size: 18px;
@@ -99,7 +103,8 @@
 }
 
 .faq-icon.open {
-  transform: rotate(90deg);    /* Ruota la freccia quando aperta */
+  /* Ruota la freccia quando aperta */
+  transform: rotate(90deg);
   color: #0072ff;
 }
 
@@ -110,7 +115,8 @@
   font-size: 16px;
   line-height: 1.7;
   background: white;
-  animation: slideDown 0.3s ease;  /* Animazione di apertura */
+  /* Animazione di apertura */
+  animation: slideDown 0.3s ease;
   border-top: 1px solid #eee;
 }
 
@@ -120,6 +126,7 @@
     opacity: 0;
     transform: translateY(-8px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);

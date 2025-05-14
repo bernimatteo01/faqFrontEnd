@@ -11,7 +11,7 @@ export class AuthService {
 
   private loggedInKey = 'loggedIn'; // Chiave usata nel localStorage
 
-  constructor() {}
+  constructor() { }
 
   /**
    * Metodo per effettuare il login.

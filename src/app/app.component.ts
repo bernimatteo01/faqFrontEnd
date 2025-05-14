@@ -21,7 +21,7 @@ export class AppComponent {
   constructor(
     private authService: AuthService, // Servizio di autenticazione
     private router: Router            // Per controllare e cambiare la rotta attuale
-  ) {}
+  ) { }
 
   /**
    * Verifica se l'utente è loggato, per mostrare o nascondere bottoni.

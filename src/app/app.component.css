@@ -1,16 +1,22 @@
 /* Barra superiore fissa (Top Bar) */
 .top-bar {
   width: 100%;
-  padding: 15px 30px;                            /* Spaziatura interna */
-  background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Sfondo sfumato */
+  padding: 15px 30px;
+  /* Sfondo sfumato */
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
   display: flex;
-  justify-content: space-between;               /* Spazio tra logo e pulsanti */
+  /* Spazio tra logo e pulsanti */
+  justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);     /* Leggera ombra inferiore */
-  position: sticky;                             /* Rimane in alto quando scrolli */
+  /* Ombra inferiore */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  /* Rimane in alto quando scrolli */
+  position: sticky;
   top: 0;
-  z-index: 1000;                                 /* Sempre visibile sopra gli altri elementi */
-  box-sizing: border-box;                        /* Padding incluso nel width */
+  /* Sempre visibile sopra gli altri elementi */
+  z-index: 1000;
+  /* Padding incluso nel width */
+  box-sizing: border-box;
 }
 
 /* Sezione sinistra (es. titolo) */
@@ -29,33 +35,38 @@
 /* Stile link e bottoni della top-bar */
 .right-section a,
 .right-section button {
-  display: inline-flex;                /* Mantiene allineamento verticale */
+  /* Mantiene allineamento verticale */
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-left: 20px;                   /* Spazio tra i bottoni */
+  margin-left: 20px;
   text-decoration: none;
-  background-color: #ffffff;           /* Bottone bianco */
+  background-color: #ffffff;
   border: none;
   padding: 8px 16px;
-  border-radius: 20px;                 /* Bordi arrotondati */
+  border-radius: 20px;
   font-size: 16px;
-  color: #004fd6;                      /* Testo blu */
+  color: #004fd6;
   font-weight: 500;
   cursor: pointer;
-  transition: all 0.3s ease;           /* Transizione morbida su hover */
-  white-space: nowrap;                /* Evita a capo del testo */
+  /* Transizione morbida su hover */
+  transition: all 0.3s ease;
+  /* Evita a capo del testo */
+  white-space: nowrap;
   min-width: 80px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombra leggera */
+  /* Ombra leggera */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Effetto hover per link e bottoni */
 .right-section a:hover,
 .right-section button:hover {
   background: linear-gradient(to right, #0072ff, #00c6ff);
-  color: #ffffff;                     /* Testo bianco al passaggio */
+  /* Testo bianco al passaggio */
+  color: #ffffff;
 }
 
 /* Contenuto principale della pagina */
 .page-content {
-  padding: 30px;                      /* Margine interno uniforme */
+  padding: 30px;
 }

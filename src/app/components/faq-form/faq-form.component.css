@@ -1,12 +1,17 @@
 /* Container principale del form */
 .faq-form-container {
-  background: #ffffff;                     /* Sfondo bianco */
-  padding: 30px;                           /* Spazio interno */
-  border-radius: 12px;                     /* Angoli arrotondati */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Ombra leggera */
-  max-width: 600px;                        /* Larghezza massima */
-  margin: 40px auto;                       /* Centro verticale con margine */
-  font-family: 'Roboto', sans-serif;       /* Font elegante e leggibile */
+  background: #ffffff;
+  /* Spazio interno */
+  padding: 30px;
+  /* Angoli arrotondati */
+  border-radius: 12px;
+  /* Ombra leggera */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  /* Larghezza massima */
+  max-width: 600px;
+  /* Centro verticale con margine */
+  margin: 40px auto;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Titolo del form */
@@ -14,7 +19,7 @@ h2 {
   margin-bottom: 20px;
   font-size: 24px;
   text-align: center;
-  color: #333;                             /* Grigio scuro per contrasto */
+  color: #333;
 }
 
 /* Margine tra i gruppi del form */
@@ -32,11 +37,12 @@ label {
 }
 
 /* Stile di input e textarea */
-input, textarea {
-  width: 95%;                              /* Quasi tutta la larghezza disponibile */
+input,
+textarea {
+  width: 95%;
   max-width: 500px;
   padding: 12px;
-  border: 1px solid #ccc;                  /* Bordo grigio chiaro */
+  border: 1px solid #ccc;
   border-radius: 8px;
   font-size: 16px;
   transition: border-color 0.3s, box-shadow 0.3s;
@@ -45,21 +51,22 @@ input, textarea {
 }
 
 /* Stile al focus di input e textarea */
-input:focus, textarea:focus {
-  border-color: #3b82f6;                   /* Azzurro (color primario) */
+input:focus,
+textarea:focus {
+  border-color: #3b82f6;
   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
   outline: none;
 }
 
 /* Bordo rosso per campi invalidi */
 .invalid {
-  border-color: #ef4444;                   /* Rosso chiaro */
+  border-color: #ef4444;
 }
 
 /* Messaggio di errore sotto i campi */
 .error {
   margin-top: 5px;
-  color: #ef4444;                          /* Rosso */
+  color: #ef4444;
   font-size: 14px;
 }
 
@@ -83,7 +90,7 @@ button {
 
 /* Bottone primario: Salva */
 button.primary {
-  background-color: #3b82f6;              /* Blu */
+  background-color: #3b82f6;
   color: white;
 }
 
@@ -94,8 +101,8 @@ button.primary:hover {
 
 /* Bottone secondario: Annulla */
 button.secondary {
-  background-color: #e5e7eb;              /* Grigio chiaro */
-  color: #374151;                         /* Grigio scuro */
+  background-color: #e5e7eb;
+  color: #374151;
 }
 
 /* Hover bottone secondario */

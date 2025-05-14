@@ -8,7 +8,7 @@
         <div class="faq-left">
           <span>{{ faq.domanda }}</span>
         </div>
-  
+
         <div class="faq-actions">
           <ng-container *ngIf="isLoggedIn()">
             <button class="faq-action-btn edit" (click)="goToEditFaq(faq.id!); $event.stopPropagation()">✏️</button>
@@ -19,7 +19,7 @@
           </div>
         </div>
       </div>
-  
+
       <div class="faq-answer" *ngIf="faq.open">
         {{ faq.risposta }}
       </div>

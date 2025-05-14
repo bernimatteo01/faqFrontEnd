@@ -16,7 +16,7 @@ import { AuthService } from '../../services/auth.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  
+
   username = '';        // Campo per l'input dell'username
   password = '';        // Campo per l'input della password
   loginFailed = false;  // Flag per mostrare errore di login
@@ -24,13 +24,13 @@ export class LoginComponent {
   constructor(
     private authService: AuthService,  // Servizio per gestire l'autenticazione
     private router: Router             // Per navigare dopo il login
-  ) {}
+  ) { }
 
   /**
    * Metodo eseguito al submit del form.
    * Verifica le credenziali tramite AuthService.
-   * In caso di successo → reindirizza alla home.
-   * In caso di errore → mostra messaggio di errore.
+   * In caso di successo: reindirizza alla home.
+   * In caso di errore: mostra messaggio di errore.
    */
   onSubmit(): void {
     if (this.authService.login(this.username, this.password)) {

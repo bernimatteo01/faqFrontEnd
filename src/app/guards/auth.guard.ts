@@ -14,12 +14,12 @@ export class AuthGuard {
   constructor(
     private authService: AuthService, // Servizio per controllare lo stato di login
     private router: Router            // Per reindirizzare l'utente se non autenticato
-  ) {}
+  ) { }
 
   /**
    * Metodo che determina se una rotta può essere attivata.
-   * Se l'utente è loggato → consente l'accesso.
-   * Altrimenti → reindirizza al login e blocca l'accesso.
+   * Se l'utente è loggato: consente l'accesso.
+   * Altrimenti: reindirizza al login e blocca l'accesso.
    * 
    * @returns true se l'utente è autenticato, false altrimenti
    */

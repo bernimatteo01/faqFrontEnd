@@ -25,7 +25,7 @@ export class FaqService {
 
   private apiUrl = 'http://localhost:8080/api/faq'; // URL base delle API FAQ
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
   /**
    * Recupera la lista di tutte le FAQ dal backend.

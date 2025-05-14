@@ -16,7 +16,7 @@ import { AuthService } from '../../services/auth.service'; // Servizio per verif
   styleUrls: ['./faq-list.component.css']
 })
 export class FaqListComponent implements OnInit {
-  
+
   // Array di FAQ con proprietà "open" opzionale (per espandere/chiudere)
   faqs: (Faq & { open?: boolean })[] = [];
 
@@ -24,7 +24,7 @@ export class FaqListComponent implements OnInit {
     private faqService: FaqService,
     private router: Router,
     private authService: AuthService
-  ) {}
+  ) { }
 
   /**
    * Al caricamento del componente, recupera tutte le FAQ dal backend.
@@ -57,7 +57,7 @@ export class FaqListComponent implements OnInit {
     this.faqs.forEach(faq => {
       faq.open = (faq === selectedFaq) ? !faq.open : false;
     });
-  }  
+  }
 
   /**
    * Elimina una FAQ dopo conferma.
